@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ChocolateyHelpers.extension</id>
+    <title>ChocolateyHelpers.extension (Chocolatey Extension)</title>
+    <version>1.0.1</version>
+    <authors>Bryan Matthews</authors>
+    <owners>Bryan Matthews</owners>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/vc3/Chocolatey-Packages</projectUrl>
+    <iconUrl>https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Chocolatey extension that provides helper functions for Chocolatey scripts (i.e. `chocolateyInstall.ps1` and `chocolateyUninstall.ps1`).
+
+## Get-ChocolateyPackagePath
+
+Gets the path where the Chocolatey package is currently being installed or uninstalled from.
+
+**Usage**:
+
+```PowerShell
+Get-ChocolateyPackagePath
+// => 'C:\ProgramData\chocolatey\lib\mypackage'
+```
+
+    </description>
+    <releaseNotes>
+
+## [1.0.0]
+
+Initial release
+
+    </releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.9" />
+    </dependencies>
+  </metadata>
+</package>
