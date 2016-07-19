@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id><%= $id %></id>
+<% if ($title) { %>
+    <title><%= $title %></title>
+<% } %>
+    <version><%= $version %></version>
+    <authors><%= $authors %></authors>
+<% if ($owners) { %>
+    <owners><%= $owners %></owners>
+<% } %>
+<% if ($licenseUrl) { %>
+    <licenseUrl><%= $licenseUrl %></licenseUrl>
+<% } %>
+<% if ($projectUrl) { %>
+    <projectUrl><%= $projectUrl %></projectUrl>
+<% } %>
+    <iconUrl>https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description><%= $description %></description>
+    <% if ($releaseNotes) { %>
+    <releaseNotes>
+<%= $releaseNotes -join "`n" %>
+</releaseNotes>
+<% } %>
+    <dependencies>
+    </dependencies>
+  </metadata>
+</package>

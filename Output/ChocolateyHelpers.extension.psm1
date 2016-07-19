@@ -1,4 +1,16 @@
 function Get-ChocolateyPackagePath {
+	<#
+	.SYNOPSIS
+	Gets the path where the Chocolatey package is currently being installed or uninstalled from.
+	
+	.EXAMPLE
+	
+	PS> $packagePath = Get-ChocolateyPackagePath
+	// => 'C:\ProgramData\chocolatey\lib\mypackage'
+	
+	Gets the package folder that the current chocolatey script is being run from.
+	
+	#>
 	[CmdletBinding()]
 	param(
 	    [string]$CommandPath=$MyInvocation.PSCommandPath
