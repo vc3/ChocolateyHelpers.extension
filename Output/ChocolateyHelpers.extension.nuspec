@@ -3,7 +3,7 @@
   <metadata>
     <id>ChocolateyHelpers.extension</id>
     <title>ChocolateyHelpers.extension (Chocolatey Extension)</title>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <authors>Bryan Matthews</authors>
     <owners>Bryan Matthews</owners>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
@@ -12,9 +12,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A Chocolatey extension that provides helper functions for Chocolatey scripts.</description>
         <releaseNotes>
-## [1.0.0]
+## [1.1.0]
+### Changed
+- Detect built-in '$env:chocolateyPackageFolder' and prompt the caller to use it.
 ### Added
-- Added cmdlet `Get-ChocolateyPackagePath`.
+- Added `bootstrap.ps1`: ensure extension modules and '$env:chocolateyPackageFolder', import local modules.
 </releaseNotes>
     <dependencies>
     </dependencies>

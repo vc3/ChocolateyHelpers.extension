@@ -71,7 +71,6 @@ task Choco:GenerateNuspec {
         $releaseNotes = @()
         $isInVersion = $null
         Get-Content $changeLogFile | foreach {
-            Write-Host $_
             if ($isInVersion) {
                 if ([string]::IsNullOrWhitespace($_)) {
                     $isInVersion = $false

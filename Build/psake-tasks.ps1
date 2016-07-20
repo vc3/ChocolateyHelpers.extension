@@ -27,7 +27,10 @@ task EnsureApiKey {
 	}
 }
 
-task UpdateOutput -depends ModuleBuilder:Build,Choco:GenerateNuspec
+task UpdateOutput -depends ModuleBuilder:Build,Choco:GenerateNuspec {
+    Write-Message "Copying 'bootstrap.ps1' to '$($outDir)'..."
+    Copy-Item "$root\bootstrap.ps1" "$root\Output"
+}
 
 task Build -depends EnsureApiKey,UpdateOutput,Choco:BuildPackages
 
