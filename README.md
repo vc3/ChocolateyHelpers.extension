@@ -5,9 +5,7 @@ A Chocolatey extension that provides helper functions for Chocolatey scripts (i.
 
 ## Commands
 
-- Get-ChocolateyPackagePage
-
-For more details, see the [module documentation](Output/ChocolateyHelpers.extension.md).
+- Get-ChocolateyPackagePath: **[OBSOLETE]** - use the 'chocolateyPackageFolder' environment variable instead.
 
 ## Release Notes
 
